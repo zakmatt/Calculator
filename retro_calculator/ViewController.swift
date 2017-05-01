@@ -109,5 +109,14 @@ class ViewController: UIViewController {
         }
         currentOperation = operation
     }
+    
+    @IBAction func onClearClick(sender: AnyObject) {
+        result = ""
+        leftValString = ""
+        rightValString = ""
+        runningNumber = ""
+        outputLbl.text = "0"
+        currentOperation = Operation.Empty
+    }
 }
 
