@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Minecrafter.Reg.ttf">
+            <string>Minecrafter</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -196,7 +201,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh9-1g-n2k">
                                 <rect key="frame" x="42" y="32" width="236" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Minecrafter" family="Minecrafter" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -209,7 +214,6 @@
                             <constraint firstItem="gh9-1g-n2k" firstAttribute="centerY" secondItem="CjV-cb-jPq" secondAttribute="centerY" constant="3" id="IT7-Td-6c8"/>
                             <constraint firstItem="g1Y-2x-ETn" firstAttribute="centerY" secondItem="OFe-z5-49w" secondAttribute="centerY" id="Pfh-kS-dpc"/>
                             <constraint firstItem="OFe-z5-49w" firstAttribute="top" secondItem="CjV-cb-jPq" secondAttribute="bottom" constant="14" id="S8r-N9-ucS"/>
-                            <constraint firstItem="CjV-cb-jPq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="5" id="Vc2-iN-Xsq"/>
                             <constraint firstAttribute="trailing" secondItem="7jq-98-CVp" secondAttribute="trailing" id="YP0-yl-76d"/>
                             <constraint firstItem="dhP-mX-Amj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b5Z-kT-ykW"/>
                             <constraint firstItem="gh9-1g-n2k" firstAttribute="leading" secondItem="CjV-cb-jPq" secondAttribute="leading" constant="17.5" id="gwL-GQ-pR9"/>
