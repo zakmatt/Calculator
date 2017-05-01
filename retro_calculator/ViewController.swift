@@ -85,12 +85,16 @@ class ViewController: UIViewController {
                 runningNumber = ""
                 
                 if currentOperation == Operation.Divide {
+                    print("left: \(leftValString), right: \(rightValString)")
                     result = "\(Double(leftValString)! / Double(rightValString)!)"
                 } else if currentOperation == Operation.Multiply {
+                    print("left: \(leftValString), right: \(rightValString)")
                     result = "\(Double(leftValString)! * Double(rightValString)!)"
                 } else if currentOperation == Operation.Add {
+                    print("left: \(leftValString), right: \(rightValString)")
                     result = "\(Double(leftValString)! + Double(rightValString)!)"
                 } else if currentOperation == Operation.Subtract {
+                    print("left: \(leftValString), right: \(rightValString)")
                     result = "\(Double(leftValString)! - Double(rightValString)!)"
                 }
                 leftValString = result
@@ -98,7 +102,9 @@ class ViewController: UIViewController {
             }
         } else {
             // This is the first time that the operation has been clicked
-            leftValString = runningNumber
+            if runningNumber != "" {
+                leftValString = runningNumber
+            }
             runningNumber = ""
         }
         currentOperation = operation
